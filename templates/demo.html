@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Demo</title>
+
+  {{ viteStyleTags "demo" }}
+</head>
+<body>
+  <h1>Demo Page</h1>
+  <div id="demo-widget"></div>
+
+  <script>window.APP_CONFIG = {{ .Config | toJSON }};</script>
+
+  {{ viteScriptTags "demo" }}
+</body>
+</html>
